@@ -3,7 +3,6 @@ const jwt = require("jsonwebtoken"); // to generate signed token
 
 
 const { JWT_SECRET, GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET } = process.env
-console.log(JWT_SECRET, GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET)
 
 const maxAge = 3 * 24 * 60 * 60;
 const create_token = (id) => {
